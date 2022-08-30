@@ -1,6 +1,22 @@
 import './CourseCard.css';
+import StarRating from './StarRating';
 
 const CourseCard = (props) => {
+
+    const rateValues = [];
+
+    for (let i = 1; i <= 5; i++) {
+        if (props.rating >= i) {
+            rateValues.push(1);
+        }
+        else if (props.rating <= i - 1) {
+            rateValues.push(0);
+        }
+        else {
+            rateValues.push(props.rating + 1 - i);
+        }
+    }
+
     return (
         <div className="course-card">
             <div className="course-img">
@@ -12,11 +28,11 @@ const CourseCard = (props) => {
                 <div className="rating">
                     <span className="rate">{ props.rating }</span>
                     <span className="stars">
-                        <i className="fa-solid fa-star icon"></i>
-                        <i className="fa-solid fa-star icon"></i>
-                        <i className="fa-solid fa-star icon"></i>
-                        <i className="fa-solid fa-star icon"></i>
-                        <i className="fa-solid fa-star-half-stroke icon"></i>
+                        {
+                            rateValues.map((rating, idx) => (
+                                <StarRating key={idx} rating={rating} />
+                            ))
+                        }
                     </span>
                     <span className="reviews">({ props.reviews })</span>
                 </div>
