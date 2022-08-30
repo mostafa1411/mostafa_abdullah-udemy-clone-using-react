@@ -1,17 +1,12 @@
 import './App.css';
-import SectionTitle from './components/SectionTitle';
-import SectionDescription from './components/SectionDescription';
-import ExploreButton from './components/ExploreButton';
-import Cards from './components/Cards';
+import Content from './components/Content';
+import { data } from './data.js';
 
 function App() {
+  let { title, description, courses } = data;
+
   return (
-    <div className="content">
-      <SectionTitle />
-      <SectionDescription />
-      <ExploreButton />
-      <Cards />
-    </div>
+    <Content title={title} description={description} courses={courses} />
   );
 }
 

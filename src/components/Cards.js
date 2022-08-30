@@ -1,13 +1,12 @@
 import CourseCard from './CourseCard';
-import { courses } from '../data.js';
 import './Cards.css';
 
-const Cards = () => {
+const Cards = ({ courses }) => {
     return (
         <div className="cards">
-            {courses.map((course) => (
+            { courses.map((course) => (
                 <CourseCard key={course.id} {...course} />
-            ))}
+            )) }
         </div>
     )
 };

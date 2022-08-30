@@ -1,8 +1,8 @@
 import './SectionTitle.css';
 
-const SectionTitle = () => {
+const SectionTitle = ({ title }) => {
     return (
-        <h3 className="heading">Expand your career opportunities with Python</h3>
+        <h3 className="heading">{ title }</h3>
     );
 };
 

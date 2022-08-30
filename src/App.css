@@ -3,9 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.content {
-  margin: 10px 0;
-  padding: 30px;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-}
