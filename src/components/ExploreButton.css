@@ -1,0 +1,16 @@
+.explore-btn {
+    font-size: 13px;
+    font-weight: 800;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1c1d1f;
+    border: 1px solid #1c1d1f;
+    width: auto;
+    height: 40px;
+}
+
+.explore-btn:hover {
+    background-color: #eee;
+}
