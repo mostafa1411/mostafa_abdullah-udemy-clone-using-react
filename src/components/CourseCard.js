@@ -1,5 +1,6 @@
 import './CourseCard.css';
 import StarRating from './StarRating';
+import { SplideSlide } from '@splidejs/react-splide';
 
 const CourseCard = (props) => {
 
@@ -18,7 +19,7 @@ const CourseCard = (props) => {
     }
 
     return (
-        <div className="course-card">
+        <SplideSlide className="course-card">
             <div className="course-img">
                 <img src={ props.image } alt="python course" />
             </div>
@@ -39,7 +40,7 @@ const CourseCard = (props) => {
                 <div className="price">E£{ props.price }</div>
                 { props.bestseller ? <div className="bestseller">Bestseller</div> : '' }
             </div>
-        </div>
+        </SplideSlide>
     );
 };
 
