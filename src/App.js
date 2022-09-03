@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Courses from './components/Courses';
 import Categories from './components/Categories';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Courses />
       <Categories />
+      <Footer />
     </>
   );
 }
