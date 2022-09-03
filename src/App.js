@@ -1,12 +1,17 @@
 import './App.css';
-import Content from './components/Content';
-import { data } from './data.js';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Courses from './components/Courses';
+import Categories from './components/Categories';
 
 function App() {
-  let { title, description, courses } = data;
-
   return (
-    <Content title={title} description={description} courses={courses} />
+    <>
+      <Navbar />
+      <Header />
+      <Courses />
+      <Categories />
+    </>
   );
 }
 
