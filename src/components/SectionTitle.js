@@ -1,8 +1,8 @@
 import './SectionTitle.css';
 
-const SectionTitle = ({ title }) => {
+const SectionTitle = ({ header }) => {
     return (
-        <h3 className="heading">{ title }</h3>
+        <h3 className="heading">{ header }</h3>
     );
 };
 

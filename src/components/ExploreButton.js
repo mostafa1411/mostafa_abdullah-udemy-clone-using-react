@@ -1,8 +1,8 @@
 import './ExploreButton.css';
 
-const ExploreButton = () => {
+const ExploreButton = ({ name }) => {
     return (
-        <button className="explore-btn">Explore Python</button>
+        <button className="explore-btn">Explore { name }</button>
     );
 };
 

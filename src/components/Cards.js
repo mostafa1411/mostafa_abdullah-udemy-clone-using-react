@@ -1,5 +1,4 @@
 import CourseCard from './CourseCard';
-import SliderButtons from './SliderButtons';
 import { Splide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/skyblue';
@@ -8,6 +7,7 @@ import '@splidejs/react-splide/css/core';
 
 
 const Cards = ({ courses }) => {
+
     return (
         <Splide
             options={{
@@ -34,8 +34,6 @@ const Cards = ({ courses }) => {
                 },
             }
         }}>
-            {/* TODO: customize slider buttons */}
-            {/* <SliderButtons /> */}
             {
                 courses.map((course) => (
                     <CourseCard key={course.id} {...course} />

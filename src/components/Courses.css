@@ -4,7 +4,6 @@
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .courses>h1 {
@@ -20,6 +19,7 @@
 
 .courses-list {
     padding-top: 10px;
+    margin-left: -15px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -42,6 +42,7 @@
 .courses-list li.active {
     cursor: default;
 }
+
 
 @media only screen and (max-width: 1315px) {
     .courses {

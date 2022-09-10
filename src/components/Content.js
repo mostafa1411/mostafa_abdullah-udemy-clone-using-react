@@ -4,13 +4,14 @@ import SectionDescription from './SectionDescription';
 import ExploreButton from './ExploreButton';
 import Cards from './Cards';
 
-const Content = ({ title, description, courses }) => {
+const Content = ({ coursesData }) => {
+
     return (
         <div className="content">
-            <SectionTitle title={title} />
-            <SectionDescription description={description} />
-            <ExploreButton />
-            <Cards courses={courses} />
+            <SectionTitle header={ coursesData.header } />
+            <SectionDescription description={ coursesData.description } />
+            <ExploreButton name={ coursesData.title } />
+            <Cards courses={ coursesData.items } />
         </div>
     );
 };

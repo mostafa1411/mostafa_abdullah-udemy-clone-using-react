@@ -1,9 +1,7 @@
 import './Courses.css';
 import Content from './Content';
-import { data } from '../data.js';
 
-const Courses = () => {
-    let { title, description, courses } = data;
+const Courses = ({ coursesData }) => {
 
     return (
         <section className="courses">
@@ -18,7 +16,7 @@ const Courses = () => {
                 <li className="course-section">AWS Certification</li>
                 <li className="course-section">Drawing</li>
             </ul>
-            <Content title={ title } description={ description } courses={ courses } />
+            <Content coursesData={ coursesData } />
         </section>
     );
 };

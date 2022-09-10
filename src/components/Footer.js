@@ -32,6 +32,7 @@ const Footer = () => {
             </div>
             <div className="inc">
                 <div className="logo-container">
+                    {/* TODO: change the color of image to white */}
                     <img className="logo" src={ logo } fill="#fff" />
                 </div>
                 <div className="copy-right">
