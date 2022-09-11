@@ -1,4 +1,4 @@
-import './CourseStudentFeedback.css';
+import './StudentFeedback.css';
 
 const CourseStudentFeedback = () => {
     return (

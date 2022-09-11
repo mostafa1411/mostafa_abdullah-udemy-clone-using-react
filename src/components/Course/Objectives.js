@@ -1,4 +1,4 @@
-import './CourseObjectives.css';
+import './Objectives.css';
 
 const CourseObjectives = () => {
     return (

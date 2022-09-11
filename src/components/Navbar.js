@@ -1,25 +1,34 @@
 import './Navbar.css';
 import logo from '../assets/logo-udemy.svg';
-import seachIcon from '../assets/search.svg';
+import searchIcon from '../assets/search.svg';
 import shoppingCartIcon from '../assets/shopping_cart.svg';
 import languageIcon from '../assets/language.svg';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const handleSearchQuery = (e) => {
+        e.preventDefault();
+        let currentValue = document.querySelector("#search").value;
+        navigate({pathname: "/", search: `?query=${currentValue}`});
+    };
+
     return (
         <nav className="navbar">
             <div className="menu d-md-none">
                 <i className="fa-solid fa-bars menu-icon"></i>
             </div>
-            <div>
+            <Link to="/">
                 <img className="logo" src={ logo } alt="udemy logo" />
-            </div>
+            </Link>
             <div className="d-none d-md-block">
                 <a href="#categories">Categories</a>
             </div>
             <div className="form d-none d-md-block">
-                <form action="" method="post" className="search-form">
+                <form action="" method="get" className="search-form">
                     <label htmlFor="search">
-                        <button type="submit" className="search-btn"><img src={ seachIcon } alt="search icon" className="search-icon" /></button>
+                        <button type="submit" className="search-btn" onClick={handleSearchQuery}><img src={ searchIcon } alt="search icon" className="search-icon" /></button>
                         <input id="search" type="text" placeholder="Search for anything" />
                     </label>
                 </form>

@@ -4,7 +4,9 @@ import { SplideSlide } from '@splidejs/react-splide';
 
 const CourseCard = (props) => {
 
-    console.log(props);
+    const handleClick = () => {
+        window.open(`/course/${props.id}`, "_blank");
+    }
 
     const rateValues = [];
 
@@ -21,7 +23,7 @@ const CourseCard = (props) => {
     }
 
     return (
-        <SplideSlide className="course-card">
+        <SplideSlide className="course-card" onClick={handleClick}>
             <div className="course-img">
                 <img src={ props.image_240x135 } alt="python course" />
             </div>

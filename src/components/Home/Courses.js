@@ -1,8 +1,7 @@
 import './Courses.css';
 import Content from './Content';
 
-const Courses = ({ coursesData }) => {
-
+const Courses = ({ data, searchQuery }) => {
     return (
         <section className="courses">
             <h1>A broad selection of courses</h1>
@@ -16,7 +15,7 @@ const Courses = ({ coursesData }) => {
                 <li className="course-section">AWS Certification</li>
                 <li className="course-section">Drawing</li>
             </ul>
-            <Content coursesData={ coursesData } />
+            <Content data={ data } searchQuery={ searchQuery } />
         </section>
     );
 };

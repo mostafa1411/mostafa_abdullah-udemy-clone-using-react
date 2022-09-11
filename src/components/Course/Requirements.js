@@ -1,4 +1,4 @@
-import './CourseRequirements.css';
+import './Requirements.css';
 
 const CourseRequirements = () => {
     return (

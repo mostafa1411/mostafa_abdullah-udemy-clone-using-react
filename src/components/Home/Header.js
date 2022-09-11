@@ -1,11 +1,11 @@
 import './Header.css';
-import headerBsckground from '../assets/header_background_small_screen.png';
+import headerBackground from '../../assets/header_background_small_screen.png';
 
 const Header = () => {
     return (
         <header className="header">
             <div className="header-img d-block d-md-none">
-                <img src={ headerBsckground } alt="header background" />
+                <img src={ headerBackground } alt="header background" />
             </div>
             <div className="header-banner">
                 <h1>New to Udemy? Lucky <span className="newline">you.</span></h1>

@@ -1,6 +1,6 @@
-import './CourseHeader.css';
+import './Header.css';
 
-const CourseHeader = () => {
+const CourseHeader = ({ course }) => {
     return (
         <header className="course-header">
             <p className="path">Development <span className="spliter">&gt;</span> Programming Languages <span className="spliter">&gt;</span> Python</p>

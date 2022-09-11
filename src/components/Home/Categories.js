@@ -1,12 +1,12 @@
 import './Categories.css';
-import category_1 from '../assets/category-1.jpeg';
-import category_2 from '../assets/category-2.jpeg';
-import category_3 from '../assets/category-3.jpeg';
-import category_4 from '../assets/category-4.jpeg';
-import category_5 from '../assets/category-5.jpeg';
-import category_6 from '../assets/category-6.jpeg';
-import category_7 from '../assets/category-7.jpeg';
-import category_8 from '../assets/category-8.jpeg';
+import category_1 from '../../assets/category-1.jpeg';
+import category_2 from '../../assets/category-2.jpeg';
+import category_3 from '../../assets/category-3.jpeg';
+import category_4 from '../../assets/category-4.jpeg';
+import category_5 from '../../assets/category-5.jpeg';
+import category_6 from '../../assets/category-6.jpeg';
+import category_7 from '../../assets/category-7.jpeg';
+import category_8 from '../../assets/category-8.jpeg';
 
 const Categories = () => {
     return (

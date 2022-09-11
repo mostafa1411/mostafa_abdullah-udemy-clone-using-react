@@ -1,4 +1,4 @@
-import './CourseReviews.css';
+import './Reviews.css';
 
 const CourseReviews = () => {
     return (
