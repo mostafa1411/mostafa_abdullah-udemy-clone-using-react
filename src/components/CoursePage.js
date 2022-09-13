@@ -26,7 +26,7 @@ const CoursePage = ({ data }) => {
                 <Description details={ content.details } />
                 <Instructors data={ course.visible_instructors } />
                 <StudentFeedback reviews={ reviews } course={ course } />
-                <Reviews />
+                <Reviews reviews={ reviews } />
             </div>
         </main>
     );

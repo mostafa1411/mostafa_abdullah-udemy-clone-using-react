@@ -75,6 +75,10 @@
     text-decoration: underline;
 }
 
+.partners {
+    flex-shrink: 0;
+}
+
 .company-logo {
     margin-left: 8px;
 }
