@@ -1,9 +1,9 @@
 import './Instructors.css';
 
-const CourseInstructors = () => {
+const Instructors = () => {
     return (
         <></>
     );
 };
 
-export default CourseInstructors;
+export default Instructors;

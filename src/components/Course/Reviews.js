@@ -1,9 +1,9 @@
 import './Reviews.css';
 
-const CourseReviews = () => {
+const Reviews = () => {
     return (
         <></>
     );
 };
 
-export default CourseReviews;
+export default Reviews;

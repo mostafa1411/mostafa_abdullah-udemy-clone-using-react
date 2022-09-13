@@ -1,11 +1,11 @@
 import './CourseCard.css';
-import StarRating from './StarRating';
+import StarRating from '../StarRating';
 import { SplideSlide } from '@splidejs/react-splide';
 
 const CourseCard = (props) => {
 
     const handleClick = () => {
-        window.open(`/course/${props.id}`, "_blank");
+        window.open(`/course/${props.id}`, "_self");
     }
 
     const rateValues = [];

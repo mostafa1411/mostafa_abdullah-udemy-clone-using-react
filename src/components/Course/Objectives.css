@@ -1,5 +1,40 @@
 .course-objectives {
-    width: 40%;
-    margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid #d1d7dc;
+    padding: 10px 5px;
+    margin: 30px 0;
+}
+  
+.course-objectives h3 {
+    margin: 0px 24px 16px;
+}
+  
+.learning-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0px 24px;
+    padding: 0;
+}
+  
+.learning-item {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    font-size: 14px;
+    margin: 0 0px 10px;
+}
+
+.learning-item span {
+    margin-left: 15px;
+}
+
+.checkIcon {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {      
+
+    .learning-item {
+        width: 100%;
+    }
 }

@@ -1,22 +1,24 @@
 import './Objectives.css';
+import CheckIcon from "@mui/icons-material/Check";
 
-const CourseObjectives = () => {
+const Objectives = ({ course }) => {
     return (
         <section className="course-objectives">
-            <h1>What you'll learn</h1>
+            <h2 className="course-section-header">What you'll learn</h2>
             <ul className="learning-items">
-                <li className="learning-item">
-                    <p>Create their own Python Programs</p>
-                </li>
-                <li className="learning-item">
-                    <p>Become an experienced Python Programmer</p>
-                </li>
-                <li className="learning-item">
-                    <p>Parse the Web and Create their own Games</p>
-                </li>
+            {
+                course.objectives_summary.map((objective, idx) => {
+                    return (
+                        <li className="learning-item" key={ idx }>
+                            <CheckIcon className="checkIcon" sx={{ fontSize: 16 }} />
+                            <span>{ objective }</span>
+                        </li>
+                    );
+                })
+            }
             </ul>
         </section>
     );
 };
 
-export default CourseObjectives;
+export default Objectives;

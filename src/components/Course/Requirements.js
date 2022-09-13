@@ -1,18 +1,22 @@
 import './Requirements.css';
+import CircleIcon from '@mui/icons-material/Circle';
 
-const CourseRequirements = () => {
+const Requirements = ({ details }) => {
     return (
         <section className="course-requirements">
-            <ul className="requirements-items">
-                <li className="requirements-item">
-                    <p>Macintosh (OSX)/ Windows(Vista and higher) Machine</p>
-                </li>
-                <li className="requirements-item">
-                    <p>Internet Connection</p>
-                </li>
+            <h2 className="course-section-header">Requirements</h2>
+            <ul className="requirements-list">
+            {
+                details.Requirements.map((requirement, idx) => (
+                    <li key={ idx } className="requirement-item">
+                        <CircleIcon className="circle-icon" />
+                        <p className="requirement-text">{ requirement }</p>
+                    </li>
+                ))
+            }
             </ul>
         </section>
     );
 };
 
-export default CourseRequirements;
+export default Requirements;

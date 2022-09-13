@@ -1,6 +1,6 @@
 import './Header.css';
 
-const CourseHeader = ({ course }) => {
+const Header = ({ course }) => {
     return (
         <header className="course-header">
             <p className="path">Development <span className="spliter">&gt;</span> Programming Languages <span className="spliter">&gt;</span> Python</p>
@@ -25,4 +25,4 @@ const CourseHeader = ({ course }) => {
     );
 };
 
-export default CourseHeader;
+export default Header;
