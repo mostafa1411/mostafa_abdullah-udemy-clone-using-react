@@ -7,7 +7,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import Collapse from "@mui/material/Collapse";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ExpandLess from "@mui/icons-material/ExpandLess";
-import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import InsertDriveFileOutlinedIcon from "@mui/icons-material/InsertDriveFileOutlined";
 import ListItem from '@mui/material/ListItem';
 
@@ -22,7 +22,7 @@ const DropDownElement = ({ section, expand }) => {
             <ListItem className="lecture">
                 <ListItemIcon>
                 {
-                    lecture.icon_class.includes("play") ? <PlayCircleFilledIcon className="video-icon" /> 
+                    lecture.icon_class.includes("play") ? <PlayCircleIcon className="video-icon" /> 
                                                         : <InsertDriveFileOutlinedIcon className="file-icon" />
                 }
                 </ListItemIcon>

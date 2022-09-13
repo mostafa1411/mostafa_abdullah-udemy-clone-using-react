@@ -1,8 +1,8 @@
 import './Navbar.css';
 import logo from '../assets/logo-udemy.svg';
-import searchIcon from '../assets/search.svg';
-import shoppingCartIcon from '../assets/shopping_cart.svg';
-import languageIcon from '../assets/language.svg';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
@@ -28,7 +28,9 @@ const Navbar = () => {
             <div className="form d-none d-md-block">
                 <form action="" method="get" className="search-form">
                     <label htmlFor="search">
-                        <button type="submit" className="search-btn" onClick={handleSearchQuery}><img src={ searchIcon } alt="search icon" className="search-icon" /></button>
+                        <button type="submit" className="search-btn" onClick={handleSearchQuery}>
+                            <SearchOutlinedIcon sx={{ marginLeft: 1, marginRight: 1, color: "#000" }} />
+                        </button>
                         <input id="search" type="text" placeholder="Search for anything" />
                     </label>
                 </form>
@@ -40,12 +42,12 @@ const Navbar = () => {
                 <a href="#teach">Teach on Udemy</a>
             </div>
             <div className="shopping d-none d-sm-block">
-                <a href="#shopping"><img className="shopping-img" src={ shoppingCartIcon } alt="shopping cart icon" /></a>
+                <ShoppingCartOutlinedIcon  />
             </div>
             <div className=" btns d-none d-md-block">
                 <button className="login-btn">Log in</button>
                 <button className="signup-btn">Sign up</button>
-                <button className="lang-btn"><img className="lang-img" src={ languageIcon } alt="language icon" /></button>
+                <button className="lang-btn"><LanguageOutlinedIcon sx={{ fontSize: 20 }} /></button>
             </div>
         </nav>
     );

@@ -1,17 +1,13 @@
 .footer {
     background-color: #1c1d1f;
     color: #fff;
-    padding: 20px 50px;
 }
 
 .control,
 .inc {
     display: flex;
     justify-content: space-between;
-}
-
-.control {
-    margin-bottom: 50px;
+    padding: 20px 50px;
 }
 
 .choose-lang {
@@ -55,6 +51,38 @@
     height: 20px;
     margin-right: 10px;
     fill: white;
+}
+
+.udemy-business {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3e4143;
+    padding: 20px 50px;
+}
+
+.udemy-business p {
+    font-size: 19px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.udemy-business span {
+    color: #cec0fc;
+    cursor: pointer;
+}
+
+.udemy-business span:hover {
+    text-decoration: underline;
+}
+
+.company-logo {
+    margin-left: 8px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .udemy-business {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 700px) {
