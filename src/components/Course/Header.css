@@ -162,8 +162,8 @@
     background-color: #761db1;
 }
 
-.header-small-screen .guarantee,
-.header-small-screen .access {
+.guarantee,
+.access {
     font-size: 12px;
     font-weight: 400;
     text-align: center;

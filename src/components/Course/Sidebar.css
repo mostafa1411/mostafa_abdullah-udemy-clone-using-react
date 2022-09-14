@@ -1,0 +1,120 @@
+.course-sidebar {
+	background-color: #fff;
+	z-index: 1;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+	width: 340px;
+	height: 920px;
+	flex-shrink: 0;
+	margin-left: 70px;
+	position: relative;
+	bottom: 370px;
+}
+
+.sidebar-course-img {
+	width: 100%;
+	border: 1px solid #d1d7dc;
+}
+
+.sidebar-content {
+	padding: 24px;
+}
+
+.course-sidebar .old-price {
+	color:  #6a6f73
+}
+
+.course-sidebar .old-price,
+.course-sidebar .offer {
+	font-size: 16px;
+}
+
+.course-sidebar .days-left {
+	color: #b32d0f;
+}
+
+.course-sidebar .add-to-cart-btn {
+	margin-bottom: 10px;
+}
+
+.white-btn {
+    background-color: #fff;
+    color: #1c1d1f;
+    border: 1px solid #1c1d1f;
+    width: 100%;
+    height: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.white-btn:hover {
+    background-color: #eee;
+}
+
+.smaller-btn {
+	height: 40px;
+	font-size: 14px;
+}
+
+.includes-container {
+	padding-top: 16px;
+	margin-bottom: 10px;
+}
+
+.includes-title {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.includes-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.includes-item {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.includes-item p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 16px;
+	padding: 0;
+	margin: 0 0 0 16px;
+}
+
+.course-sidebar .options {
+	padding-bottom: 16px;
+}
+
+.course-sidebar .options p {
+	text-underline-offset: 2px;
+}
+
+.training-container {
+	padding-top: 24px;
+	border-top: 1px solid #d1d7dc;
+	display: flex;
+	flex-direction: column;
+}
+
+.training-title {
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.training-description {
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1080px) {
+
+	.course-sidebar {
+		display: none;
+	}
+}

@@ -23,7 +23,7 @@ const CoursePage = ({ data }) => {
             <Header course={ course } />
             <HeaderNavbar />
             <div className="main-container">
-                <Sidebar />
+                <Sidebar course={ course } />
                 <div className="content-container">
                     <Objectives course={ course } />
                     <Content contentData={ content.curriculum_context.data } />

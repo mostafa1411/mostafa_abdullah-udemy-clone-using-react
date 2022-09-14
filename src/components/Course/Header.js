@@ -66,7 +66,7 @@ const Header = ({ course }) => {
                             <span className="current-price">{"E£" + course.price}</span>
                             <span className="old-price">{"E£" + course.old_price}</span>
                             <span className="offer">
-                                {`${Math.ceil(100 * (course.old_price - course.price) / course.old_price)}"% off`}
+                                {`${Math.ceil(100 * (course.old_price - course.price) / course.old_price)}% off`}
                             </span>
                         </p>
                         <p className="days-left">
