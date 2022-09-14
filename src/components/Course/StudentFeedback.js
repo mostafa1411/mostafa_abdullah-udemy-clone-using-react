@@ -31,7 +31,7 @@ const StudentFeedback = ({ reviews, course }) => {
     };
 
     return (
-        <div className="student-feedback-section">
+        <div id="rating-feedback" className="student-feedback-section">
             <h3 className="course-section-header">Student feedback</h3>
             <div className="student-feedback-container">
                 <div className="rating-container">

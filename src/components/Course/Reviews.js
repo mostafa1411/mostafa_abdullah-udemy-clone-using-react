@@ -23,7 +23,7 @@ const Reviews = ({ reviews }) => {
     };
 
     return (
-        <section className="course-reviews-section">
+        <section id="reviews" className="course-reviews-section">
             <h2 className="course-section-header">Reviews</h2>
             <form className="reviews-search-form">
                 <div className="content-filter">

@@ -3,7 +3,7 @@ import CheckIcon from "@mui/icons-material/Check";
 
 const Objectives = ({ course }) => {
     return (
-        <section className="course-objectives">
+        <section id="overview" className="course-objectives">
             <h2 className="course-section-header">What you'll learn</h2>
             <ul className="learning-items">
             {

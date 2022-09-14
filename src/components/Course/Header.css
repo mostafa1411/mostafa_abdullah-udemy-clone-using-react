@@ -1,14 +1,207 @@
-.course-header {
+.course-header-section {
     background-color: #1c1d1f;
     color: #fff;
+    margin: 0;
+    padding: 32px 0;
+}
+
+.header-wrapper {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-container {
+    width: 700px;
+    max-width: 60%;
 }
 
 .path {
     color: #cecdfc;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.spliter {
-    margin: 4px;
+.header-course-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-course-headline {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.header-course-headline {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-rating-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: -8px 0 5px;
+}
+
+.header-rating-value {
+    color: #f3cabc;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.header-reviews-count {
+    color: #cec0fc;
+    position: static;
+    top: 0px;
+}
+
+.header-reviews-count:hover {
+    color: #cec0fc;
+}
+
+.header-students-count {
+    margin-left: 5px;
+}
+
+.header-instructors {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-instructor-name {
+    color: #cec0fc;
+}
+
+.header-instructor-name:hover {
+    color: #cec0fc;
+}
+
+.header-course-lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.header-course-lang div {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+  
+.header-course-lang p {
+    margin: 0 10px;
+}
+
+.video-container {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.course-header-img {
+    width: 100%;
+}
+
+.header-small-screen {
+    display: none;
+    margin-top: 20px;
+}
+
+.price-container {
+    margin-bottom: 8px;
+}
+
+.price-container .current-price {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.price-container .old-price {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 8px;
+    color: #d1d7dc;
+    text-decoration: line-through;
+}
+
+.price-container .offer,
+.days-left {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.days-left {
+    color: #fcaead;
+}
+
+.one-day {
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.add-to-cart-btn {
+    background-color: #a435f0;
     color: #fff;
-    font-size: 13px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #761db1;
+}
+
+.header-small-screen .guarantee,
+.header-small-screen .access {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+.options p {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1080px) {
+
+    .header-wrapper {
+        align-items: center;
+    }
+
+    .header-container {
+        max-width: 100%;
+    }
+
+    .header-course-lang {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .video-container,
+    .header-small-screen {
+        display: block;
+    }
 }

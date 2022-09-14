@@ -1,5 +1,7 @@
 import './CoursePage.css';
 import Header from './Course/Header';
+import HeaderNavbar from './Course/HeaderNavbar';
+import Sidebar from './Course/Sidebar';
 import Objectives from './Course/Objectives';
 import Content from './Course/Content';
 import Requirements from './Course/Requirements';
@@ -17,18 +19,22 @@ const CoursePage = ({ data }) => {
     const course = courses.items.find((item) => item.id == courseId);
 
     return (
-        <main className="main-container">
-            <div className="content-container">
-                <Header course={ course } />
-                <Objectives course={ course } />
-                <Content contentData={ content.curriculum_context.data } />
-                <Requirements details={ content.details } />
-                <Description details={ content.details } />
-                <Instructors data={ course.visible_instructors } />
-                <StudentFeedback reviews={ reviews } course={ course } />
-                <Reviews reviews={ reviews } />
+        <>
+            <Header course={ course } />
+            <HeaderNavbar />
+            <div className="main-container">
+                <Sidebar />
+                <div className="content-container">
+                    <Objectives course={ course } />
+                    <Content contentData={ content.curriculum_context.data } />
+                    <Requirements details={ content.details } />
+                    <Description details={ content.details } />
+                    <Instructors data={ course.visible_instructors } />
+                    <StudentFeedback reviews={ reviews } course={ course } />
+                    <Reviews reviews={ reviews } />
+                </div>
             </div>
-        </main>
+        </>
     );
 };
 

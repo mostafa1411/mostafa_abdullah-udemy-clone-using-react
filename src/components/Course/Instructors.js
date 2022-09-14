@@ -7,10 +7,10 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
 const Instructors = ({ data }) => {
-    const Instructor = ({ instructor }) => {
+    const Instructor = ({ instructor, order }) => {
         return (
             <ShowMore>
-                <div className="instructor-container">
+                <div id={`instructor-${order}`} className="instructor-container">
                     <h3 className="instructor-name">{ instructor.display_name }</h3>
                     <p className="instructor-job-title">{ instructor.job_title }</p>
                     <div className="instructor-card">
@@ -41,11 +41,11 @@ const Instructors = ({ data }) => {
     };
 
     return (
-        <section className="course-instructors-section">
+        <section id="instructors" className="course-instructors-section">
             <h2 className="course-section-header">Instructors</h2>
             {
                 data.map((instructor, idx) => 
-                    <Instructor key={ idx } instructor={ instructor } />
+                    <Instructor key={ idx } instructor={ instructor } order={ idx + 1 } />
                 )
             }
         </section>
