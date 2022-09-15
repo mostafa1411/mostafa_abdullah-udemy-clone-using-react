@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import SalePopup from './components/SalePopup';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <SalePopup />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage data={ data } />} />

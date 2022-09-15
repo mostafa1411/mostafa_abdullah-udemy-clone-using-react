@@ -2,7 +2,7 @@
     background-color: #fff;
     padding: 8px 10px 8px 30px;
     width: 100%;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
