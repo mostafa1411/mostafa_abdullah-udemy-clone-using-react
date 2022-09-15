@@ -7,7 +7,6 @@ import '@splidejs/react-splide/css/core';
 
 
 const Cards = ({ courses }) => {
-
     return (
         <Splide
             options={{
@@ -36,7 +35,7 @@ const Cards = ({ courses }) => {
         }}>
             {
                 courses.map((course) => (
-                    <CourseCard key={course.id} {...course} />
+                    <CourseCard key={ course.id } course={ course }  />
                 ))
             }
         </Splide>

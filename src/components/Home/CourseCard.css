@@ -16,8 +16,8 @@
 
 .course-info .title,
 .course-info .price {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .course-info .creator {
@@ -26,13 +26,12 @@
 }
 
 .bestseller {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
     color: #3d3c0a;
     background-color: #eceb98;
-    padding: 5px;
-    width: 60px;
-    text-align: center;
+    display: inline-block;
+    padding: 4px 8px;
 }
 
 .rating .rate {
@@ -47,4 +46,12 @@
     font-weight: 400;
     margin-left: 0.4rem;
     color: #6a6f73;
+}
+
+.course-popup {
+    display: none;
+}
+
+.popup-controller {
+    display: flex;
 }
