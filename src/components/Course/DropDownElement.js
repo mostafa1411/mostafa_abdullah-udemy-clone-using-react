@@ -1,5 +1,5 @@
 import './DropDownElement.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
@@ -14,8 +14,9 @@ import ListItem from '@mui/material/ListItem';
 const DropDownElement = ({ section, expand }) => {
     const [expandLectures, setExpandLectures] = useState(expand);
 
-    // console.log(expand);
-    // console.log(expandLectures);
+    useEffect(() => {
+        setExpandLectures(expand);
+    }, [expand]) 
 
     const Lecture = ({ lecture }) => {
         return (
