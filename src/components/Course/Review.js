@@ -1,11 +1,25 @@
 import './Review.css';
 import React, { useState } from "react";
-import Rating from "@mui/material/Rating";
+import StarRating from "../StarRating";
 import ThumbUpIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownIcon from "@mui/icons-material/ThumbDownOutlined";
 
 const Review = ({ review }) => {
     const [feedback, setFeedback] = useState(0);
+
+    const rateValues = [];
+
+    for (let i = 1; i <= 5; i++) {
+        if (review.rating >= i) {
+            rateValues.push(1);
+        }
+        else if (review.rating <= i - 1) {
+            rateValues.push(0);
+        }
+        else {
+            rateValues.push(review.rating + 1 - i);
+        }
+    }
 
     return (
         <div className="review-container">
@@ -13,7 +27,13 @@ const Review = ({ review }) => {
             <div>
                 <h3 className="username">{ review.user.public_display_name }</h3>
                 <div className="rating-time">
-                    <Rating sx={{ fontSize: 20, color: "#e59819", paddingBottom: 0 }} defaultValue={ review.rating } precision={0.5} readOnly />
+                    <span className="stars">
+                    {
+                        rateValues.map((rating, idx) => (
+                            <StarRating key={idx} rating={rating} />
+                        ))
+                    }
+                    </span>
                     <p className="time-since">{ review.created_formatted_with_time_since } </p>
                 </div>
                 <p className="review-content">{ review.content }</p>
