@@ -1,9 +1,7 @@
 import './CourseCard.css';
 import React, { useState } from 'react';
 import StarRating from '../StarRating';
-import { SplideSlide } from '@splidejs/react-splide';
 import { OverlayTrigger, Popover } from 'react-bootstrap';
-
 import { Link } from "react-router-dom";
 import CheckIcon from "@mui/icons-material/Check";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -38,7 +36,6 @@ const CourseCard = ({ course }) => {
         
         let rightDistance = window.innerWidth - card.getBoundingClientRect().right;
         if (rightDistance > 350) {
-            console.log(rightDistance);
             return "right";
         }
 
@@ -104,7 +101,6 @@ const CourseCard = ({ course }) => {
                 </Popover>
             }
         >
-            {/* <SplideSlide className="course-card" onClick={handleClick}> */}
             <div id={`course-card-${course.id}`} className="course-card" onClick={handleClick}>
                 <div className="course-img">
                     <img src={ course.image_240x135 } alt="python course" />
@@ -127,7 +123,6 @@ const CourseCard = ({ course }) => {
                     { course.bestseller_badge_content ? <div className="bestseller">Bestseller</div> : '' }
                 </div>
             </div>
-            {/* </SplideSlide> */}
         </OverlayTrigger>        
     );
 };

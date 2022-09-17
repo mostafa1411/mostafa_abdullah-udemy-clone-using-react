@@ -1,45 +1,43 @@
 import CourseCard from './CourseCard';
-import { Splide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
-import '@splidejs/react-splide/css/skyblue';
-import '@splidejs/react-splide/css/sea-green';
-import '@splidejs/react-splide/css/core';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Cards = ({ courses }) => {
     return (
-        <Splide
-            options={{
-            type   : 'slide',
-            perPage: 5,
-            perMove: 5,
-            pagination: false,
-            breakpoints: {
+        <Swiper className="mySwiper"
+            spaceBetween={10}
+            modules={[Navigation]}
+            navigation={true}
+            breakpoints={{
+                1400: {
+                    slidesPerView: 5,
+                },
                 1200: {
-                    perPage: 4,
-                    perMove: 4,
+                    slidesPerView: 4,
                 },
                 980: {
-                    perPage: 3,
-                    perMove: 3,
+                    slidesPerView: 3,
                 },
                 700: {
-                    perPage: 2,
-                    perMove: 2,
+                    slidesPerView: 2,
                 },
                 550: {
-                    perPage: 1,
-                    perMove: 1,
+                    slidesPerView: 1,
                 },
-            }
-        }}>
-            {
-                courses.map((course) => (
-                    <CourseCard key={ course.id } course={ course }  />
-                ))
-            }
-        </Splide>
-    )
+            }}
+        >
+        {
+            courses.map((course) => (
+                <SwiperSlide key={ course.id }>
+                    <CourseCard course={ course }  />
+                </SwiperSlide>
+            ))
+        }
+        </Swiper>
+    );
 };
 
 export default Cards;
