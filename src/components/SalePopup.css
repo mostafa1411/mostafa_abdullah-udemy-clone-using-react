@@ -1,0 +1,29 @@
+.sale-container {
+    background-color: #eceb98;
+    display: flex;
+}
+
+.text-container {
+    width: 97%;
+    padding: 16px 0 16px 24px;
+}
+
+.text-container p {
+    text-align: center;
+    color: #1c1d1f;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.special-offer {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.close-btn {
+    padding: 0 10px 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

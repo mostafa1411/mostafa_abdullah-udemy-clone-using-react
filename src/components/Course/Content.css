@@ -1,0 +1,20 @@
+.content-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.expand-sections-btn {
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5624d0;
+    cursor: pointer;
+}
+  
+.expand-sections-btn:hover {
+    color: #401b9c;
+}

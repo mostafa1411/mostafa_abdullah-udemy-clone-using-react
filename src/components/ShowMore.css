@@ -1,0 +1,21 @@
+.limit-container {
+    height: 290px;
+    overflow: hidden;
+}
+
+.showmore-btn {
+    display: flex;
+    color: #5624d0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.showmore-btn:hover {
+    color: #401b9c;
+}
+
+.showmore-btn p {
+    margin-right: 5px;
+}

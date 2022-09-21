@@ -1,0 +1,11 @@
+.content {
+    margin: 10px 0;
+    padding: 30px;
+    border: 1px solid #d1d7dc;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

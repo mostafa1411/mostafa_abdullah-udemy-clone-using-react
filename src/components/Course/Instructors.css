@@ -1,0 +1,54 @@
+.instructor-container {
+    width: 100%;
+    margin: 10px 0 15px;
+}
+
+.instructor-name {
+    color: #5624d0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.instructor-name:hover {
+    color: #401b9c;
+}
+
+.instructor-job-title {
+    color: #6a6f73;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.instructor-card {
+    display: flex;
+}
+
+.instructor-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
+.instructor-list {
+    list-style: none;
+    margin-left: 16px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.instructor-item {
+    display: flex;
+    align-items: center;
+}
+
+.instructor-item span {
+    margin: 4px 0 4px 15px;
+}
+
+.instructor-description {
+    font-size: 14px;
+    margin-top: 2px;
+}

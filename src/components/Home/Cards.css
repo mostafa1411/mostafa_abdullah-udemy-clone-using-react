@@ -1,0 +1,5 @@
+.swiper-button-next {
+    color: red !important;
+    background-color: #000 !important;
+    transform: scale(1.5) !important;
+}

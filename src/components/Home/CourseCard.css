@@ -1,0 +1,129 @@
+.course-card {
+    padding: 5px;
+    width: 15em;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.course-img img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.course-card:hover .course-img {
+    filter: brightness(80%);
+}
+
+.course-info>div {
+    margin-bottom: 5px;
+}
+
+.course-info .title,
+.course-info .price {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.course-info .creator {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.bestseller {
+    font-size: 12px;
+    font-weight: 700;
+    color: #3d3c0a;
+    background-color: #eceb98;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.rating .rate {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 0.4rem;
+    color: #b4690e;
+}
+
+.rating .reviews {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 0.4rem;
+    color: #6a6f73;
+}
+
+.popup-container {
+    width: 340px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    border: 1px solid #d1d7dc;
+    background-color: #fff;
+    padding: 24px;
+    z-index: 100;
+}
+
+.popup-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c1d1f;
+    text-decoration: none;
+}
+
+.popup-title:hover {
+    color: #3a198d;
+}
+
+.last-updated {
+    color: #14574c;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.last-updated-date {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.popup-course-details {
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: #6a6f73;
+}
+
+.popup-headline {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.popup-container .learning-items {
+    flex-direction: column;
+    margin: 0;
+}
+
+.popup-container .learning-item {
+    width: 100%;
+}
+
+.popup-container .learning-item span {
+    margin-left: 15px;
+}
+
+.buy-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.popup-container .add-to-cart-btn {
+    width: 80%;
+}
+
+.love-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}

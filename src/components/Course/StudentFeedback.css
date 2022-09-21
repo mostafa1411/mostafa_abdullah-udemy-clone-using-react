@@ -1,0 +1,63 @@
+.student-feedback-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b4690e;
+    height: 140px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 30px;
+}
+
+.rating-container p {
+    margin: 0;
+}
+
+.rating-value {
+    font-size: 64px;
+}
+
+.bars-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.rating-percentage {
+    color: #5624d0;
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 3px;
+    width: 40px;
+}
+
+.rating-progress > * {
+    background-color: #6a6f6f !important; 
+}
+
+.rating-progress {
+    background-color: #d1d7dc !important;
+    height: 8px !important;
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .student-feedback-container {
+        flex-direction: column;
+    }
+}

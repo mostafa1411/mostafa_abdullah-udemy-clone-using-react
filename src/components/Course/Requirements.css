@@ -1,0 +1,21 @@
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.requirement-item  {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.circle-icon {
+    font-size: 8px !important;
+    margin-right: 20px !important;
+    margin-top: 5px !important;
+}
+
+.requirement-text {
+    font-size: 14px;
+}

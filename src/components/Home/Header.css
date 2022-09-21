@@ -1,0 +1,79 @@
+.header {
+    width: 80%;
+    margin: 3px auto 0;
+    min-height: 50vh;
+    height: auto;
+    background-image: url("../../assets/header_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-banner {
+    padding: 20px 10px 20px 20px;
+    width: 35%;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-banner h1 {
+    font-family: serif;
+    font-size: max(2.5vw, 30px);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.header-banner p {
+    font-size: max(1.2vw, 15px);
+    color: #1c1d1f;
+    font-family: Helvetica;
+}
+
+.newline {
+    display: block;
+}
+
+@media only screen and (max-width: 1315px) {
+    .header {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-banner {
+        padding: 0 0 0 20px;
+        width: 100%;
+        position: unset;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .header-banner h1,
+    .courses>h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .header-banner p {
+        font-size: 12px;
+    }
+
+    .newline {
+        display: inline;
+    }
+}
